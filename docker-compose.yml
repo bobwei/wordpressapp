@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  wordpress:
+    image: eugeneware/docker-wordpress-nginx
+    ports:
+      - 80:80
+  dockup:
+    image: tutum/dockup
+    env_file: .env
+    environment:
+      BACKUP_NAME: mysql
+      PATHS_TO_BACKUP: /var/lib/mysql /usr/share/nginx/www
+      RESTORE: 'false'
+    volumes_from:
+      - wordpress
