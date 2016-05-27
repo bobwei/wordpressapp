@@ -1,6 +1,6 @@
 # Wordpress App
 
-This is an experimental docker app with wordpress inside and useful functions such as auto backup.
+This is an experimental docker app with wordpress inside and useful functions such as manual backup.
 
 ## Installation
 
