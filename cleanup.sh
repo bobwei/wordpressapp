@@ -1,1 +1,1 @@
-docker rm -v $(docker ps -f name=wordpress -aq)
+docker rm -v -f $(docker ps -f name=wordpress -aq)
