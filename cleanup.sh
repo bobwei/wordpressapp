@@ -1,2 +1,1 @@
-docker rm -f $(docker ps -f name=wordpressapp -aq)
-docker volume rm $(docker volume ls -q)
+docker rm -v $(docker ps -f name=wordpress -aq)
